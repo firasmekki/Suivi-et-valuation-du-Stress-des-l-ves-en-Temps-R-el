@@ -49,7 +49,19 @@ Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du st
 - npm ou yarn
 
 
-📁 **Structure du projet**
+
+```bash
+# Créer un administrateur par défaut
+node scripts/createAdmin.js
+
+# Créer un formateur
+node scripts/createFormateur.js
+
+# Créer des domaines de formation
+node scripts/seedDomaines.js
+```
+
+## 📁 Structure du projet
 
 
 ├── backend/
