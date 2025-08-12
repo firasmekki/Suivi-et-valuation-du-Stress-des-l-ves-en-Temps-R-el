@@ -1,6 +1,6 @@
 # Plateforme de Suivi du Stress des Élèves - PFE
 
-## Capture d’écran - Vue Étudiants
+## Capture d’écran - Détail Étudiant (Analyse du Stress des Étudiants en Temps Réel )
 
 Voici un exemple de capture d’écran montrant la liste des étudiants avec leur niveau de stress :
 
@@ -8,7 +8,8 @@ Voici un exemple de capture d’écran montrant la liste des étudiants avec leu
 
 ---
 
-## Capture d’écran - Détail Étudiant
+## Capture d’écran - Détail Étudiant (Analyse du Stress des Étudiants en Temps Réel )
+
 
 Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du stress :
 
