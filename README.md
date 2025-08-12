@@ -48,10 +48,6 @@ Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du st
 - MongoDB (local ou cloud)
 - npm ou yarn
 
-### 1. Cloner le repository
-```bash
-git clone <votre-repo-url>
-cd pfe-suivi-stress
 
 📁 Structure du projet
 
