@@ -50,17 +50,6 @@ Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du st
 
 
 
-```bash
-# Créer un administrateur par défaut
-node scripts/createAdmin.js
-
-# Créer un formateur
-node scripts/createFormateur.js
-
-# Créer des domaines de formation
-node scripts/seedDomaines.js
-```
-
 ## 📁 Structure du projet
 
 
@@ -70,6 +59,8 @@ node scripts/seedDomaines.js
 │   ├── routes/
 │   ├── middleware/
 │   └── scripts/
+
+
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -77,6 +68,7 @@ node scripts/seedDomaines.js
 │   │   ├── redux/
 │   │   └── utils/
 │   └── public/
+
 ├── capture/           # Dossier des captures d’écran
 └── README.md
 
