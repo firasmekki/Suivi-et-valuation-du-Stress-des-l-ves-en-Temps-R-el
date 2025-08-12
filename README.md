@@ -61,6 +61,7 @@ Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du st
 │   └── scripts/
 
 
+
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -69,7 +70,10 @@ Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du st
 │   │   └── utils/
 │   └── public/
 
+
 ├── capture/           # Dossier des captures d’écran
+
+
 └── README.md
 
 
