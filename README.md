@@ -50,7 +50,6 @@ Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du st
 
 
 📁 Structure du projet
-
 ├── backend/
 │   ├── controllers/
 │   ├── models/
@@ -66,6 +65,7 @@ Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du st
 │   └── public/
 ├── capture/           # Dossier des captures d’écran
 └── README.md
+
 
 🔐 Sécurité
 Authentification sécurisée avec JWT
