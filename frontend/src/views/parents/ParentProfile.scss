@@ -1,0 +1,154 @@
+.parent-profile {
+  padding: 1rem;
+
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  }
+
+  .card {
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+    border: none;
+    border-radius: 0.428rem;
+    margin-bottom: 2rem;
+
+    .card-header {
+      background-color: transparent;
+      padding: 1.5rem;
+      border-bottom: 1px solid #ebe9f1;
+
+      .card-title {
+        margin-bottom: 0;
+        color: #5e5873;
+        font-weight: 500;
+        font-size: 1.285rem;
+      }
+    }
+
+    .card-body {
+      padding: 1.5rem;
+
+      .profile-info {
+        .info-item {
+          margin-bottom: 1.5rem;
+
+          .info-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            color: #5e5873;
+            font-weight: 500;
+            font-size: 0.857rem;
+            text-transform: uppercase;
+
+            svg {
+              margin-right: 0.5rem;
+              color: #7367f0;
+            }
+          }
+
+          .info-value {
+            color: #6e6b7b;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ebe9f1;
+          }
+        }
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+
+        label {
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.5rem;
+          color: #5e5873;
+          font-weight: 500;
+
+          svg {
+            margin-right: 0.5rem;
+            color: #7367f0;
+          }
+        }
+
+        .form-control {
+          height: 2.714rem;
+          padding: 0.438rem 1rem;
+          border: 1px solid #d8d6de;
+          border-radius: 0.357rem;
+          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+          &:focus {
+            border-color: #7367f0;
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        textarea.form-control {
+          height: auto;
+          min-height: 100px;
+        }
+      }
+    }
+  }
+
+  .alert {
+    margin-bottom: 1.5rem;
+    border-radius: 0.357rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .btn {
+    padding: 0.786rem 1.5rem;
+    border-radius: 0.357rem;
+    font-weight: 500;
+    transition: all 0.15s ease-in-out;
+
+    &.btn-primary {
+      background-color: #7367f0;
+      border-color: #7367f0;
+
+      &:hover {
+        background-color: #5e50ee;
+        border-color: #5e50ee;
+        box-shadow: 0 8px 25px -8px #7367f0;
+      }
+
+      &:disabled {
+        background-color: #7367f0;
+        border-color: #7367f0;
+        opacity: 0.65;
+      }
+    }
+
+    &.btn-secondary {
+      background-color: #82868b;
+      border-color: #82868b;
+
+      &:hover {
+        background-color: #6f7275;
+        border-color: #6f7275;
+        box-shadow: 0 8px 25px -8px #82868b;
+      }
+    }
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+
+    .card {
+      .card-header,
+      .card-body {
+        padding: 1rem;
+      }
+    }
+  }
+} 

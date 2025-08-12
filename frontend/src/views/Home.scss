@@ -1,0 +1,145 @@
+.dashboard-container {
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+
+  .welcome-section {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+
+    .welcome-text {
+      h1 {
+        color: #2c3e50;
+        font-size: 2rem;
+        
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        color: #6e6b7b;
+      }
+    }
+
+    .search-container {
+      max-width: 300px;
+      width: 100%;
+      position: relative;
+
+      .search-group {
+        max-width: 100%;
+        margin: 0 auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+
+        .search-input {
+          border: none;
+          padding: 0.7rem 1rem;
+          font-size: 0.95rem;
+          background: #f8f9fa;
+          
+          &:focus {
+            box-shadow: none;
+            background: white;
+          }
+        }
+
+        .search-icon {
+          background: #f8f9fa;
+          border: none;
+          color: #6e6b7b;
+          padding-right: 1.2rem;
+          
+          &:hover {
+            color: #5e50ee;
+          }
+        }
+      }
+
+      .search-results {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 0.5rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+        z-index: 1000;
+        max-height: 300px;
+        overflow-y: auto;
+
+        .search-result-item {
+          border: none;
+          border-bottom: 1px solid #ebe9f1;
+          padding: 0.7rem 1rem;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &:hover {
+            background-color: #f8f8f8;
+          }
+
+          .fw-bold {
+            color: #2c3e50;
+            font-size: 0.9rem;
+          }
+
+          small {
+            font-size: 0.8rem;
+          }
+        }
+
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #f8f9fa;
+          border-radius: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: #d8d8d8;
+          border-radius: 8px;
+
+          &:hover {
+            background: #c1c1c1;
+          }
+        }
+      }
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 768px) {
+    .welcome-section {
+      padding: 1.5rem;
+
+      .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .search-container {
+        max-width: 100%;
+
+        .search-results {
+          position: fixed;
+          top: auto;
+          left: 1rem;
+          right: 1rem;
+          max-height: 50vh;
+        }
+      }
+    }
+  }
+} 

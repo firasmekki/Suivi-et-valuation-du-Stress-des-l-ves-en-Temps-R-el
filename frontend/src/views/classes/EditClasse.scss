@@ -1,0 +1,98 @@
+.edit-classe {
+  .card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  }
+
+  .card-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(34, 41, 47, 0.1);
+    padding: 1.5rem;
+
+    .card-title {
+      color: #5e5873;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .table {
+    th {
+      font-weight: 600;
+      color: #5e5873;
+      border-top: none;
+    }
+
+    td {
+      vertical-align: middle;
+    }
+  }
+
+  .badge {
+    font-size: 0.85em;
+    padding: 0.4em 0.8em;
+    font-weight: 500;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+      font-weight: 500;
+      color: #5e5873;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+      border-radius: 0.428rem;
+      border: 1px solid #d8d6de;
+      padding: 0.438rem 1rem;
+      height: calc(1.5em + 0.875rem + 2px);
+      font-size: 1rem;
+      transition: border-color 0.15s ease-in-out;
+
+      &:focus {
+        border-color: #7367f0;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .btn {
+    padding: 0.786rem 1.5rem;
+    border-radius: 0.358rem;
+    font-weight: 500;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+
+    &.btn-primary {
+      background-color: #7367f0;
+      border-color: #7367f0;
+      box-shadow: 0 2px 4px 0 rgba(115, 103, 240, 0.4);
+
+      &:hover {
+        background-color: #5e50ee;
+        border-color: #5e50ee;
+      }
+    }
+
+    &.btn-secondary {
+      background-color: #82868b;
+      border-color: #82868b;
+      box-shadow: 0 2px 4px 0 rgba(130, 134, 139, 0.4);
+
+      &:hover {
+        background-color: #6f7275;
+        border-color: #6f7275;
+      }
+    }
+  }
+} 

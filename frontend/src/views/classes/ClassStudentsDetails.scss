@@ -1,0 +1,312 @@
+.class-students-details {
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+
+  .badge {
+    font-size: 0.85em;
+    padding: 0.4em 0.6em;
+  }
+
+  .modal-body ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .badge {
+        min-width: 80px;
+        text-align: center;
+      }
+    }
+  }
+
+  .history-list {
+    margin-top: 1rem;
+
+    .history-item {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 0.7rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .history-date {
+        font-weight: 600;
+        color: #333;
+        font-size: 1rem;
+        min-width: 120px;
+        text-align: left;
+      }
+
+      .stress-indicator-group {
+        display: flex;
+        align-items: center;
+
+        .stress-circle {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          margin-right: 1rem;
+          position: relative;
+          flex-shrink: 0;
+          
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+          }
+        }
+
+        .badge {
+          font-size: 0.9em;
+          padding: 0.6em 1em;
+          border-radius: 25px;
+          font-weight: 600;
+          min-width: 100px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .modal-content {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-header {
+    background: linear-gradient(45deg, #7367f0, #9e95f5);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 1.5rem;
+    border-bottom: none;
+
+    .modal-title {
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+
+    .btn-close {
+      color: white;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 2rem;
+
+    h5 {
+      color: #5e5873;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .history-table {
+      width: 100%;
+      margin-top: 1rem;
+      border-collapse: separate;
+      border-spacing: 0 0.5rem;
+
+      thead {
+        th {
+          background-color: #f5f5f5;
+          border-bottom: 1px solid #ddd;
+          padding: 0.75rem 1.25rem;
+          font-weight: 600;
+          color: #6e6b7b;
+          text-align: left;
+
+          &:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          background-color: #ffffff;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          margin-bottom: 0.8rem;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+          }
+
+          td {
+            padding: 1rem 1.5rem;
+            vertical-align: middle;
+            color: #4e4e4e;
+            font-size: 0.98rem;
+
+            &:first-child {
+              border-top-left-radius: 8px;
+              border-bottom-left-radius: 8px;
+            }
+
+            &:last-child {
+              border-top-right-radius: 8px;
+              border-bottom-right-radius: 8px;
+            }
+          }
+        }
+      }
+
+      .stress-circle {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-right: 0.75rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          animation: pulse 2s infinite;
+        }
+      }
+
+      .badge {
+        font-size: 0.9em;
+        padding: 0.6em 1em;
+        border-radius: 25px;
+        font-weight: 600;
+        min-width: 100px;
+        text-align: center;
+      }
+    }
+  }
+
+  .modal-footer {
+    border-top: 1px solid #eee;
+    padding: 1rem 2rem;
+    background: #f8f8f8;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .stats-card {
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-body {
+      padding: 1.5rem;
+      
+      h5 {
+        margin-bottom: 1rem;
+        color: #5e5873;
+      }
+    }
+  }
+
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+
+  .history-table {
+    margin-top: 1rem;
+    
+    .stress-circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+  }
+
+  .modal-lg {
+    max-width: 900px;
+  }
+
+  .table {
+    th {
+      cursor: pointer;
+      user-select: none;
+      
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+      }
+    }
+  }
+
+  .input-group {
+    .input-group-text {
+      background-color: #f8f8f8;
+      border-right: none;
+    }
+    
+    .form-control {
+      border-left: none;
+      
+      &:focus {
+        box-shadow: none;
+        border-color: #d8d6de;
+      }
+    }
+  }
+
+  .badge {
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+} 

@@ -1,0 +1,61 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+// Import des polices
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+// Styles globaux
+body {
+  font-family: 'Montserrat', Helvetica, Arial, serif;
+}
+
+// Styles pour les titres
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Helvetica, Arial, serif;
+  font-weight: 600;
+  color: #5e5873;
+  letter-spacing: -0.5px;
+}
+
+// Styles pour le texte
+p {
+  font-family: 'Montserrat', Helvetica, Arial, serif;
+  font-weight: 400;
+  color: #6e6b7b;
+  letter-spacing: 0.14px;
+}
+
+// Décaler le contenu principal un peu à gauche
+.content-body {
+  margin-left: -18.5rem;
+}
+
+// Forcer la navbar à rester statique (jamais fixed)
+.header-navbar.navbar-fixed,
+.header-navbar.floating-nav,
+.horizontal-menu-wrapper,
+.header-navbar.navbar-horizontal.floating-nav,
+.header-navbar.navbar-horizontal.fixed-top {
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+}
+
+// Décaler la navbar principale un peu à droite
+.header-navbar.floating-nav.navbar-expand-lg {
+  margin-left: 20rem;
+}
+
+// Remonter le contenu principal
+.content-wrapper {
+  margin-top: -3rem;
+}
