@@ -49,7 +49,9 @@ Exemple d’affichage détaillé d’un étudiant avec graphiques de suivi du st
 - npm ou yarn
 
 
-📁 Structure du projet
+📁 **Structure du projet**
+
+
 ├── backend/
 │   ├── controllers/
 │   ├── models/
